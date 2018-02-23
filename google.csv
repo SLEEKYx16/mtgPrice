@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+
+<link rel="alternate" type="application/atom+xml" title="ATOM" href="https://www.mtggoldfish.com/feed" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.mtggoldfish.com/feed.rss" />
+<link href='//assets1.mtggoldfish.com/assets/goldfish-32-22599602a047942143b34b034de85b0968d377caf56ff4a12c06146a4c13b989.png' rel='apple-touch-icon'>
+<link href='//assets1.mtggoldfish.com/assets/goldfish-72-f4155e01f71cfcaaa34af38dea8296e912c56eb5474a0ecc60064b4601ffebd6.png' rel='apple-touch-icon' sizes='72x72'>
+<link href='//assets1.mtggoldfish.com/assets/goldfish-114-1d9d14e0a25de8fa2df41aed9ef917d10c27f55d07a2ca60c34331c56c6b8030.png' rel='apple-touch-icon' sizes='114x114'>
+<link href='//assets1.mtggoldfish.com/assets/goldfish-144-fbf44d4bca87904f865574e1cc5ae42ac3789e284b765bc16eb920373b14b906.png' rel='apple-touch-icon' sizes='144x144'>
+<link href='//assets1.mtggoldfish.com/assets/goldfish-64-f5b29fefb4ab86245883253afa5faffc2ffae42f26cd0291e620c074f354b3a6.png' rel='apple-touch-icon-precomposed'>
+<link href='//assets1.mtggoldfish.com/assets/goldfish-32-22599602a047942143b34b034de85b0968d377caf56ff4a12c06146a4c13b989.png' rel='shortcut icon' type='image/png'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat|Open+Sans' rel='stylesheet'>
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"5bc503bb75","applicationID":"5132532","transactionName":"cFYLQBdeXQpQFBZBU0BKDFsLQh4IUBE=","queueTime":0,"applicationTime":19,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="KDIP7qvtkAEqX5uUTGmaiHcPceYOFdoW6L0ERynYToX+Q1jCC4uerVEV04gxwUxK8LCcD9Ypp1RFF4A3owYqWw==" />
+<link rel="stylesheet" media="all" href="//assets1.mtggoldfish.com/assets/application-59ebd6c97c3e4e4f882d5fa6e206edea227291bb529444bd734df63fa94caafb.css" />
+<link rel="stylesheet" media="print" href="//assets1.mtggoldfish.com/assets/print-6ea5076dba0b9bf0a07bd1b6ba2c5f860ceb3acc4e7adac560bbaf6f8f89b26a.css" />
+<script>(function() {
+var _fbq = window._fbq || (window._fbq = []);
+if (!_fbq.loaded) {
+var fbds = document.createElement('script');
+fbds.async = true;
+fbds.src = '//connect.facebook.net/en_US/fbds.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(fbds, s);
+_fbq.loaded = true;
+}
+_fbq.push(['addPixelId', '928681210525176']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=928681210525176&amp;ev=PixelInitialized" /></noscript>
+
+  <script>
+  var script = document.createElement('script');
+  var tstamp = new Date();
+  script.id = 'factorem';
+  script.src = '//cdm.cursecdn.com/js/mtggoldfish/cdmfactorem_min.js?misc=' + tstamp.getTime();
+  script.async = false;
+  script.type='text/javascript';
+  document.head.appendChild(script);
+  </script>
+
+</head>
+<body>
+<img alt="MTGGoldfish" class="layout-print-logo" src="//assets1.mtggoldfish.com/assets/print-logo-b4db554933e3d44ebd0e4d026098dbab515105e53876a7c8f027e2dc6fbac816.png" />
+<div class='layout-navbar-wrapper'>
+<nav class='navbar navbar-default layout-navbar-top' role='navigation'>
+<div class='layout-header-banner clearfix'>
+<div class='layout-header-banner-logo'>
+<a href="/"><img class="layout-header-banner-logo-img sprite-logo-with-type-large" src="//assets1.mtggoldfish.com/assets/s-d69cbc552cfe8de4931deb191dd349a881ff4448ed3251571e0bacd0257519b1.gif" alt="S" />
+</a></div>
+<div class='navbar-ad-container'>
+<div class='layout-top-ad-container layout-top-adsize-responsive'>
+
+  <div class="ads-container-cdm-zone-01">
+      <script>
+      (function () {
+      var num = (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 728) ? '0m' : '01';
+      document.write('<div id="cdm-zone-' + num + '"></div>');
+      })();
+      </script>
+  </div>
+
+</div>
+</div>
+</div>
+<div class='layout-header-nav'>
+<div class='layout-header-nav-inner'>
+<div class='layout-header-header-brand'>
+<div class='navbar-header'>
+<button aria-controls='navbar' aria-expanded='false' class='layout-navbar-toggle navbar-toggle collapsed' data-target='#navbar' data-toggle='collapse' type='button'>
+<span class='sr-only'>Toggle navigation</span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</button>
+<a class='navbar-brand layout-navbar-brand' href='/'>
+<img class="layout-brand-image img-circle sprite-goldfish-navbar-logo" alt="MTGGoldfish" src="//assets1.mtggoldfish.com/assets/s-d69cbc552cfe8de4931deb191dd349a881ff4448ed3251571e0bacd0257519b1.gif" />
+<!-- = image_tag("logo-with-type-large.png") -->
+<!-- = image_tag("logo-with-type.png") -->
+</a>
+</div>
+<div class='navbar-collapse collapse layout-navbar-collapse' id='navbar'>
+<ul class='nav navbar-nav'>
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Prices
+<span class='caret'></span>
+</a>
+<ul class='dropdown-menu' role='menu'>
+<li><a href="/prices/standard">Price Lists</a></li>
+<li><a href="/movers/standard">Movers and Shakers</a></li>
+</ul>
+</li>
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Decks
+<span class='caret'></span>
+</a>
+<ul class='dropdown-menu' role='menu'>
+<li><a href="/metagame/standard">Metagame</a></li>
+<li><a href="/format-staples/standard">Format Staples</a></li>
+<li><a href="/superbrew">SuperBrew</a></li>
+<li class='divider' role='presentation'>User Submitted Decks</li>
+<li><a href="/deck/custom/standard">User Submitted Decks</a></li>
+<li><a href="/decks/new">Submit a Deck</a></li>
+</ul>
+</li>
+<li class='dropdown'><a href="/articles">Articles</a></li>
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Tools
+<span class='caret'></span>
+</a>
+<ul class='dropdown-menu' role='menu'>
+<li><a href="/portfolio">My Collection</a></li>
+<li><a href="/decks">My Decks</a></li>
+<li><a href="/price_alerts">My Price Alerts</a></li>
+<li><a href="/premium">Premium Membership</a></li>
+<li class='divider' role='presentation'></li>
+<li><a href="/tools/deck_pricer">Deck Pricer</a></li>
+<li><a target="_blank" href="https://chrome.google.com/webstore/detail/mtg-prices-by-mtggoldfish/bneckalmjgjiocbgannjaffookadphna">Chrome Browser Extension</a></li>
+</ul>
+</li>
+<li class='dropdown'>
+<a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+Shop
+<span class='caret'></span>
+</a>
+<ul class='dropdown-menu dropdown-menu-sets' role='menu'>
+<li class='dropdown-header' role='presentation'>Gift Guide</li>
+<li><a href="/shop/Holiday-Gift-Guide-2016">Holiday Gift Guide 2016</a></li>
+<li class='divider' role='presentation'></li>
+<li><a href="/deals/standard">Deal Finder</a></li>
+<li class='divider' role='presentation'></li>
+<li class='dropdown-header' role='presentation'>Upcoming Releases</li>
+<li class='dropdown-menu-sets-prerelease'>
+<a href="/spoilers/Rivals+of+Ixalan">Rivals of Ixalan
+<span class='text-muted small menu-date-subtext'>Jan 19</span>
+</a></li>
+<li class='divider' role='presentation'></li>
+<li class='dropdown-header' role='presentation'>Recent Releases</li>
+<li class='dropdown-menu-sets-prerelease'>
+<a href="/spoilers/Iconic+Masters">Iconic Masters
+<span class='text-muted small menu-date-subtext'>Nov 17</span>
+</a></li>
+<li class='dropdown-menu-sets-prerelease'>
+<a href="/spoilers/Unstable">Unstable
+<span class='text-muted small menu-date-subtext'>Dec 8</span>
+</a></li>
+<li class='dropdown-menu-sets-prerelease'>
+<a href="/spoilers/Ixalan">Ixalan
+<span class='text-muted small menu-date-subtext'>Sep 29</span>
+</a></li>
+<li class='divider' role='presentation'></li>
+<li class='dropdown-header' role='presentation'>Merchandise</li>
+<li><a href="/shop/mtggoldfish">MTGGoldfish</a></li>
+<li><a href="/shop/books">Books</a></li>
+<li><a href="/shop/toys">Toys</a></li>
+<li><a href="/shop/visual-novels">Comics / Art Books</a></li>
+<li class='divider' role='presentation'></li>
+<li class='dropdown-header' role='presentation'>Reviews</li>
+<li><a href="/reviews/deck-boxes">Deck Boxes</a></li>
+<li><a href="https://www.mtggoldfish.com/articles/magic-the-gathering-card-sleeves-review">Sleeves</a></li>
+<li><a href="https://www.mtggoldfish.com/articles/arena-of-the-planeswalkers-shadows-over-innistrad-review">Arena of the Planeswalker</a></li>
+</ul>
+</li>
+<li class='dropdown'>
+<a class='dropdown-toggle' data-target='#login-modal' data-toggle='modal' href='#'>
+Login
+</a>
+</li>
+</ul>
+
+</div>
+</div>
+<form class="layout-searchbar-mobile" role="search" action="/q" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<div class='layout-header-search-menu'>
+<a href="/"><img class="layout-header-search-menu-logo sprite-logo-with-type" src="//assets1.mtggoldfish.com/assets/s-d69cbc552cfe8de4931deb191dd349a881ff4448ed3251571e0bacd0257519b1.gif" alt="S" />
+</a><div class='input-group layout-navbar-input-group'>
+<input type="search" name="query_string" id="query_string" class="form-control card-auto main-search layout-search-input" autofocus="autofocus" />
+<div class='input-group-btn'>
+<button class='glyphicon glyphicon-search btn btn-default layout-navbar-search-btn' type='submit'></button>
+</div>
+</div>
+</div>
+</form>
+
+</div>
+</div>
+</nav>
+</div>
+</body>
+<div class='container-fluid layout-container-fluid'>
+<div id='error'>
+
+</div>
+<div class='container'>
+<h4>Sign in Using an Existing Account</h4>
+<br>
+<div class='container-fluid existing-account'>
+<div class='row'>
+<div class='col-md-6'>
+<form action="/auth/facebook" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<input type="hidden" name="override_origin" id="override_origin" value="" class="login-override_origin" />
+<input type="submit" name="commit" value="" class="layout-login-btn sprite-login-facebook" data-disable-with="" />
+<p class='help-block'>
+<small>We will never post to your profile without permission.</small>
+</p>
+<div class='checkbox'>
+<label class='text-muted'>
+<input type="checkbox" name="remember_me" id="remember_me" value="remember_me" />
+Remember me
+</label>
+</div>
+</form>
+
+</div>
+<div class='col-md-6'>
+<form action="/auth/twitter" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<input type="hidden" name="override_origin" id="override_origin" value="" class="login-override_origin" />
+<input type="submit" name="commit" value="" class="layout-login-btn sprite-login-twitter" data-disable-with="" />
+<p class='help-block'>
+<small>We will never tweet on your behalf without permission.</small>
+</p>
+<div class='checkbox'>
+<label class='text-muted'>
+<input type="checkbox" name="remember_me" id="remember_me" value="remember_me" />
+Remember me
+</label>
+</div>
+</form>
+
+</div>
+</div>
+</div>
+<hr>
+<h4>Sign in Using an MTGGoldfish Email Account</h4>
+<form class="form layout-auth-identity-form" action="/auth/identity/callback" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="6hJwY8Ki/sU7eL/gVhJnxDyxA0tOniRT+Evd8B6+2gM8YydPYsTwaUAy9/wrurEGuw7uopaiWRFV4VmAlGC+3Q==" />
+<input type="hidden" name="override_origin" id="override_origin" value="" class="login-override_origin" />
+<div class='form-group'>
+<label>Email Address</label>
+<input type="text" name="auth_key" id="auth_key" value="" class="form-control layout-auth-identity-form-email" />
+</div>
+<div class='form-group'>
+<label>Password</label>
+<input type="password" name="password" id="password" value="" class="form-control" />
+<div class='clearfix'>
+<div class='checkbox pull-left'>
+<label class='text-muted'>
+<input type="checkbox" name="remember_me" id="remember_me" value="remember_me" />
+Remember me
+</label>
+</div>
+<p class='help-block pull-right' style='margin-top: 10px;'>Forgot your password? <a href="/password/reset/new">Reset it here</a>.</p>
+</div>
+<input type="submit" name="commit" value="Log In" class="btn btn-primary" data-disable-with="Log In" />
+</div>
+</form>
+
+<p></p>
+<form id="layout-login-signup-form" action="/identity/new" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<input type="hidden" name="override_origin" id="override_origin" value="" class="login-override_origin" />
+<p>Don't have an account? <a id="layout-login-signup-btn" href="javascript:void(0);">Sign Up for free!</a></p>
+</form>
+
+
+</div>
+
+</div>
+<div class='layout-bottom-ad'>
+
+  <div class="ads-container-cdm-zone-04">
+      <script>
+      (function () {
+      var num = (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 728) ? '00' : '04';
+      document.write('<div id="cdm-zone-' + num + '"></div>');
+      })();
+      </script>
+  </div>
+
+</div>
+<div class='layout-bottom-banner'>
+<div class='layout-bottom-contents'>
+<div class='layout-footer-panel'>
+<div class='layout-footer-panel-container'>
+<h4>Resources</h4>
+<ul class='layout-footer-panel-menu'>
+<li><a href="/faq">FAQ</a></li>
+<li><a href="/discuss">Discuss</a></li>
+</ul>
+</div>
+<div class='layout-footer-panel-container'>
+<h4>Company</h4>
+<ul class='layout-footer-panel-menu'>
+<li><a href="/policies/privacy">Privacy Policy</a></li>
+<li><a href="/policies/terms-of-use">Terms of Use</a></li>
+<li><a href="/contact">Contact</a></li>
+</ul>
+</div>
+<div class='layout-footer-panel-container'>
+<h4>Goldfish Network</h4>
+<ul class='layout-footer-panel-menu'>
+<li><a href="http://www.pokegoldfish.com">PokeGoldfish</a></li>
+<li><a href="http://www.mtgcoverage.com">MTGCoverage</a></li>
+</ul>
+</div>
+<div class='layout-footer-panel-container'>
+<h4>Contribute</h4>
+<ul class='layout-footer-panel-menu'>
+<li><a href="/tournaments/new">Submit Tournament Results</a></li>
+</ul>
+</div>
+</div>
+<div class='layout-newsletter-panel'>
+<h4>Get Email Updates</h4>
+<form class="form" action="/subscriptions" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="XjxpQ/hWUXASZG6LhgXIibCKMNdNhYm+PMmqnYXGQxeITT5vWDBf3GkuJpf7rR5LNzXdPpW59PyRYy7tDxgnyQ==" />
+<input type="text" name="subscription[email]" id="subscription_email" value="" class="form-control layout-newsletter-input" />
+<input type="submit" name="commit" value="Sign up!" class="btn btn-default layout-newsletter-btn" data-disable-with="Sign up!" />
+</form>
+
+<h4>Follow Us</h4>
+<ul class='list-inline'>
+<li class='layout-social-item'><a href="https://www.facebook.com/mtggoldfish"><img class="sprite-clementine_facebook" src="//assets1.mtggoldfish.com/assets/s-d69cbc552cfe8de4931deb191dd349a881ff4448ed3251571e0bacd0257519b1.gif" alt="S" /></a></li>
+<li class='layout-social-item'><a href="https://twitter.com/mtggoldfish"><img class="sprite-clementine_twitter" src="//assets1.mtggoldfish.com/assets/s-d69cbc552cfe8de4931deb191dd349a881ff4448ed3251571e0bacd0257519b1.gif" alt="S" /></a></li>
+<li class='layout-social-item'><a href="https://www.twitch.tv/mtggoldfish"><img class="sprite-clementine_twitch" src="//assets1.mtggoldfish.com/assets/s-d69cbc552cfe8de4931deb191dd349a881ff4448ed3251571e0bacd0257519b1.gif" alt="S" /></a></li>
+<li class='layout-social-item'><a href="https://instagram.com/mtggoldfish/"><img class="sprite-clementine_instagram" src="//assets1.mtggoldfish.com/assets/s-d69cbc552cfe8de4931deb191dd349a881ff4448ed3251571e0bacd0257519b1.gif" alt="S" /></a></li>
+<li class='layout-social-item'><a href="http://mtggoldfish.tumblr.com/"><img class="sprite-clementine_tumblr" src="//assets1.mtggoldfish.com/assets/s-d69cbc552cfe8de4931deb191dd349a881ff4448ed3251571e0bacd0257519b1.gif" alt="S" /></a></li>
+<li class='layout-social-item'><a href="/feed"><img class="sprite-clementine_rss" src="//assets1.mtggoldfish.com/assets/s-d69cbc552cfe8de4931deb191dd349a881ff4448ed3251571e0bacd0257519b1.gif" alt="S" /></a></li>
+<li class='layout-social-item'><a href="mailto:contact@mtggoldfish.com"><img class="sprite-clementine_email" src="//assets1.mtggoldfish.com/assets/s-d69cbc552cfe8de4931deb191dd349a881ff4448ed3251571e0bacd0257519b1.gif" alt="S" /></a></li>
+</ul>
+</div>
+<div class='layout-social-panel'>
+
+  <div class="ads-container-cdm-zone-03">
+      <script>
+      (function () {
+      var num = (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 728) ? '00' : '03';
+      document.write('<div id="cdm-zone-' + num + '"></div>');
+      })();
+      </script>
+  </div>
+
+</div>
+</div>
+</div>
+<div class='bottom-shelf'>
+<div class='banner-contents'>
+<p class='layout-copyright-notice'>All original content on this page is © 2012-2016 MTGGoldfish, Inc. and may not be used or reproduced without consent.  Wizards of the Coast, Magic: The Gathering, and their logos are trademarks of Wizards of the Coast LLC. © 1995-2016 Wizards. All rights reserved. MTGGoldfish, Inc. is not affiliated with Wizards of the Coast LLC.</p>
+</div>
+</div>
+<div aria-hidden='true' aria-labelledby='Login Dialog' class='modal fade' id='login-modal' role='dialog' tabindex='-1'>
+<div class='modal-dialog'>
+<div class='modal-content'>
+<div class='modal-header'>
+<button aria-hidden='true' class='close' data-dismiss='modal' type='button'>×</button>
+<h4 class='modal-title'>Sign in Using an Existing Account</h4>
+</div>
+<div class='modal-body clearfix'>
+<div class='container-fluid existing-account'>
+<div class='row'>
+<div class='col-md-6'>
+<form action="/auth/facebook" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<input type="hidden" name="override_origin" id="override_origin" value="" class="login-override_origin" />
+<input type="submit" name="commit" value="" class="layout-login-btn sprite-login-facebook" data-disable-with="" />
+<p class='help-block'>
+<small>We will never post to your profile without permission.</small>
+</p>
+<div class='checkbox'>
+<label class='text-muted'>
+<input type="checkbox" name="remember_me" id="remember_me" value="remember_me" />
+Remember me
+</label>
+</div>
+</form>
+
+</div>
+<div class='col-md-6'>
+<form action="/auth/twitter" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<input type="hidden" name="override_origin" id="override_origin" value="" class="login-override_origin" />
+<input type="submit" name="commit" value="" class="layout-login-btn sprite-login-twitter" data-disable-with="" />
+<p class='help-block'>
+<small>We will never tweet on your behalf without permission.</small>
+</p>
+<div class='checkbox'>
+<label class='text-muted'>
+<input type="checkbox" name="remember_me" id="remember_me" value="remember_me" />
+Remember me
+</label>
+</div>
+</form>
+
+</div>
+</div>
+</div>
+<hr>
+<h4>Sign in Using an MTGGoldfish Email Account</h4>
+<form class="form layout-auth-identity-form" action="/auth/identity/callback" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="RkaYF/JQXhgFR8gV753CyFQKRyEHQQl+iJu2qi/JXxmQN887UjZQtH4NgAmSNRQK07WqyN99dDwlMTLapRc7xw==" />
+<input type="hidden" name="override_origin" id="override_origin" value="" class="login-override_origin" />
+<div class='form-group'>
+<label>Email Address</label>
+<input type="text" name="auth_key" id="auth_key" value="" class="form-control layout-auth-identity-form-email" />
+</div>
+<div class='form-group'>
+<label>Password</label>
+<input type="password" name="password" id="password" value="" class="form-control" />
+<div class='clearfix'>
+<div class='checkbox pull-left'>
+<label class='text-muted'>
+<input type="checkbox" name="remember_me" id="remember_me" value="remember_me" />
+Remember me
+</label>
+</div>
+<p class='help-block pull-right' style='margin-top: 10px;'>Forgot your password? <a href="/password/reset/new">Reset it here</a>.</p>
+</div>
+<input type="submit" name="commit" value="Log In" class="btn btn-primary" data-disable-with="Log In" />
+</div>
+</form>
+
+<p></p>
+<form id="layout-login-signup-form" action="/identity/new" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<input type="hidden" name="override_origin" id="override_origin" value="" class="login-override_origin" />
+<p>Don't have an account? <a id="layout-login-signup-btn" href="javascript:void(0);">Sign Up for free!</a></p>
+</form>
+
+
+</div>
+</div>
+</div>
+</div>
+
+<div aria-hidden='true' aria-labelledby='Card Popup' class='modal fade' id='card-popup-modal' role='dialog' tabindex='-1'>
+<div class='modal-dialog'>
+<div class='modal-content'>
+<div class='modal-header text-center'>
+<button aria-hidden='true' class='close' data-dismiss='modal' type='button'>×</button>
+<h4 class='modal-title' id='card-popup-modal-title'>Card</h4>
+</div>
+<div class='modal-body'>
+<p class='text-center'>
+<img id="card-popup-modal-image" src="https://cdn1.mtggoldfish.com/images/gf/back.jpg" alt="Back" />
+</p>
+<p class='text-center'>
+<a class="btn btn-default" id="card-popup-modal-link" href="">Price History</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class='layout-typePreferencePopup' id='type-preference-popup'>
+<button class='close' id='type-preference-dismiss'>
+<span aria-hidden='true'></span>
+×
+<span class='sr-only'>Close</span>
+</button>
+<div class='layout-typePreferencePopup-content'>
+<div class='layout-typePreferencePopup-description'>
+<p>Welcome to MTGGoldfish. We display prices for both ONLINE and PAPER magic. By default, what prices would you like to see?&nbsp;&nbsp;&nbsp;</p>
+</div>
+<div class='layout-typePreferencePopup-btns'>
+<btn class='btn btn-default btn-warning' id='type-preference-online'>Online</btn>
+<btn class='btn btn-default btn-primary' id='type-preference-paper'>Paper</btn>
+</div>
+</div>
+</div>
+
+<script src="//assets1.mtggoldfish.com/assets/application-c763e7c985ecd548b1d450fd49bc2ec4fb6c39bd604fe856a076b69cc61a4f83.js"></script>
+<script src="//assets1.mtggoldfish.com/assets/google_analytics-b937cd0016a130f3ed2854b9300a7d17c75fa043be671dd10470f5394c1f3a8f.js"></script>
+<div id='cdm-zone-end'></div>
+
+<!-- Begin comScore -->
+<script>
+var _comscore = _comscore || [];
+_comscore.push({ c1: "2", c2: "6035118" });
+(function() {
+   var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+   s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+   el.parentNode.insertBefore(s, el);
+})();
+</script>
+<noscript>
+   <img src="//b.scorecardresearch.com/p?c1=2&amp;c2=6035118&amp;cv=2.0&amp;cj=1" />
+</noscript>
+<!-- End comScore -->
+
+<!-- Nielsen Online SiteCensus -->
+<script type="text/javascript">
+(function () {
+   var d = new Image(1, 1);
+   d.onerror = d.onload = function () {
+       d.onerror = d.onload = null;
+   };
+   d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-603339h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+})();
+</script>
+<noscript>
+   &lt;div&gt;&lt;img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-603339h&amp;amp;cg=0&amp;amp;cc=1&amp;amp;ts=noscript" width="1" height="1" alt="" /&gt;&lt;/div&gt;
+</noscript>
+<!-- End Nielsen Online SiteCensus -->
+
+
+</html>
