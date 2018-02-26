@@ -52,6 +52,20 @@ class decklist:
         for eaEntry in self.entries:
             unique.add(eaEntry.name)
         return unique
+    def qtyMain(self,name):
+        for eaEntry in self.entries:
+            if not eaEntry.sideboard:
+                if eaEntry.name == name:
+                    return eaEntry.quantity
+        #If it didn't match it wasn't played
+        return 0
+    def qtySide(self,name):
+        for eaEntry in self.entries:
+            if eaEntry.sideboard:
+                if eaEntry.name == name:
+                    return eaEntry.quantity
+        #If it didn't match yet it wasn't played
+        return 0
 #This date is which day will be looked up
 lookupDate = '2018-02-22'
 #Where to look for the URL
@@ -89,14 +103,26 @@ for eaDecklist in decklists:
 for eaBasic in ['Plains','Island','Swamp','Mountain','Forest']:
     playedCards.remove(eaBasic)
 playedCards = list(playedCards)
+#Figure out how many cards were played main and side board
+playedMainboard = []
+playedSideboard = []
+for eaCard in playedCards:
+    eaQuantity = 0
+    for eaDeck in decklists:
+        eaQuantity += eaDeck.qtyMain(eaCard)
+    playedMainboard.append(eaQuantity)
+    eaQuantity = 0
+    for eaDeck in decklists:
+        eaQuantity += eaDeck.qtySide(eaCard)
+    playedSideboard.append(eaQuantity)
 #TODO:This data frame isn't even used again later. It litterally does nothing. I don't get it.
-df = pd.DataFrame({'Name': playedCards})
+df = pd.DataFrame({'Name': playedCards, 'Main': playedMainboard, 'Side': playedSideboard})
 #Print out a TSV of the collection.
 with open('collection.tsv', 'w') as csvfile:
     #open the TSV
     collection = csv.writer(csvfile, delimiter='\t', quotechar='"', quoting=csv.QUOTE_MINIMAL)
     #print out each card
-    for eaCard in playedCards:
+    for name, main, side in zip(playedCards, playedMainboard, playedSideboard):
         #This needs to be passed a list!!!
-        collection.writerow([eaCard])
+        collection.writerow([name, main, side])
 print('fin')
