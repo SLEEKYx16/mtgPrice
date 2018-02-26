@@ -83,6 +83,9 @@ for eaDecklistdiv in decklistdivs:
 #    print(str(eaDeck))
 #Make a list of all cards played
 playedCards = set()
+for eaDecklist in decklists:
+    playedCards.update(eaDecklist.uniqueCards())
+playedCards = list(playedCards)
 #Make a dataframe to print? I don't really get why, but hey
 df = pd.DataFrame({'Name': playedCards})
 #Print out a TSV of the collection.
