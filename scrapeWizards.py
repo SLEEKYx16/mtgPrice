@@ -31,6 +31,7 @@ class decklist:
         self.entries = []
         self.mainTotal = 0
         self.sideTotal = 0
+        self.filename = player + ' (5-0).txt'
     def append(self,newentry):
         #Should take an entry object
         self.entries.append(newentry)
@@ -39,12 +40,17 @@ class decklist:
         else:
             self.mainTotal += newentry.quantity
     def __str__(self):
-        #TODO: print sideboard cards all together
-        #Print out all the entries nicely
-        output = self.player + '\t' + self.date + '\n'
-        output = output + str(len(self.uniqueCards())) + ' unique cards\n'
-        output = output + str(self.mainTotal) + ':' + str(self.sideTotal) + '\n'
-        output = output + '\n'.join([str(x) for x in self.entries])
+        output = ''
+        #Mainboard Cards
+        for eaEntry in self.entries:
+            if not eaEntry.sideboard:
+                output += str(eaEntry.quantity) + ' ' + eaEntry.name + '\n'
+        #There are two empty lines between the mainboard and the sideboard
+        output += '\n\n'
+        #Sideboard Cards
+        for eaEntry in self.entries:
+            if eaEntry.sideboard:
+                output += str(eaEntry.quantity) + ' ' + eaEntry.name + '\n'
         return output
     def uniqueCards(self):
         #return a set of unique cardnames
