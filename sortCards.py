@@ -3,6 +3,8 @@
 import json
 #for sorting the cards
 from operator import itemgetter, attrgetter, methodcaller
+#for reading the now more complicated TSV
+import csv
 #Classes
 #Class for a card
 class mtgcard:
@@ -13,13 +15,17 @@ class mtgcard:
   def __str__(self):
     return '\t'.join([self.name, self.cid, self.set]) + '\n'
 #load the set list
-JSON = open('allSets.json','r',encoding='utf-8')
+#Python 3 version?
+#JSON = open('allSets.json','r',encoding='utf-8')
+JSON = open('AllSets.json','r')
 cardsJSON = json.load(JSON)
 #Load the list of all the cards played in Standard, produced by the Jupyter Notebook
 #The list is scraped from WotC's weekly decklists
-playedCardsF = open('collection.tsv','r',encoding="utf-8")
-playedCards = playedCardsF.readlines()
-playedCards = [x.strip() for x in playedCards]
+playedCards = []
+with open('collection.tsv','r') as tsvfile:
+    tsvreader = csv.reader(tsvfile, delimiter='\t', quotechar='"')
+    for row in tsvreader:
+        playedCards.append(row[0])
 #Remove basic lands from the list of played cards because it is not interesting to know about them.
 basics = ['Plains','Island','Swamp','Mountain','Forest']
 for eaBasic in basics:
@@ -47,7 +53,7 @@ for eaSet in standardSets:
         #append the card object to a list
         obj = mtgcard(playedCard, colorID, eaSet)
         knownCards.append(obj)
-tsvout = open('playedCards.tsv','w',encoding="utf-8")
+tsvout = open('playedCards.tsv','w')
 for knownCard in sorted(knownCards, key = attrgetter('set','name')):
   tsvout.write(str(knownCard))
 tsvout.close()
