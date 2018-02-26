@@ -87,10 +87,14 @@ for eaDecklist in decklists:
     playedCards.update(eaDecklist.uniqueCards())
 playedCards = list(playedCards)
 #Make a dataframe to print? I don't really get why, but hey
+#TODO:This data frame isn't even used again later. It litterally does nothing. I don't get it.
 df = pd.DataFrame({'Name': playedCards})
 #Print out a TSV of the collection.
-#This is done by the very questionable method of replacing the commas with newlines at the moment.
 with open('collection.tsv', 'w') as csvfile:
-    collection = csv.writer(csvfile, delimiter='\n', quotechar='\t', quoting=csv.QUOTE_MINIMAL)
-    collection.writerow(playedCards)
+    #open the TSV
+    collection = csv.writer(csvfile, delimiter='\t', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+    #print out each card
+    for eaCard in playedCards:
+        #This needs to be passed a list!!!
+        collection.writerow([eaCard])
 print('fin')
