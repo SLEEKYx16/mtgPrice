@@ -85,8 +85,10 @@ for eaDecklistdiv in decklistdivs:
 playedCards = set()
 for eaDecklist in decklists:
     playedCards.update(eaDecklist.uniqueCards())
+#It's not useful to know that the basics see play, for what this is being used for right now.
+for eaBasic in ['Plains','Island','Swamp','Mountain','Forest']:
+    playedCards.remove(eaBasic)
 playedCards = list(playedCards)
-#Make a dataframe to print? I don't really get why, but hey
 #TODO:This data frame isn't even used again later. It litterally does nothing. I don't get it.
 df = pd.DataFrame({'Name': playedCards})
 #Print out a TSV of the collection.
