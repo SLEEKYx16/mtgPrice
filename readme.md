@@ -33,7 +33,7 @@ Pleasef conduct, and the process for submitting pull requests to us.
 
 ## Authors
 
-* **Max McCann** -  [Github](https://github.com/PurpleBooth)
+* **Max McCann** -  [Github](https://github.com/MaxMcCann)
 * **Matthew Turnbull** -  [Github](https://github.com/avematthew)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
